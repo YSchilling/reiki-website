@@ -1,58 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Impressum</title>
     <link rel="stylesheet" href="output.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <!--Header-->
-    <header class="bg-white fixed w-full h-32 mb-16 grid grid-cols-12 items-center">
-        <img class="col-start-2 col-span-2 w-16 h-16" src="../media/yin_yang.png" alt="">
-        <!--START Mobile Burger Menu-->
-        <div id="burger-menu" class="lg:hidden col-start-10 col-span-2 justify-self-end"><span></span></div>
-        <div id="menu" class="lg:hidden">
-            <ul>
-              <li><a href="./index.html">Reiki</a></li>
-              <li><a href="./about.html">Mein Weg</a></li>
-              <li><a href="./angebote.html">Meine Angebote</a></li>
+    <div class="main-container">
+        <!--Header-->
+        <header class="fixed bg-white w-full max-w-screen-2xl m-auto h-24 grid grid-cols-12 items-center">
+            <img class="col-start-2 col-span-2 w-16 h-16" src="../media/yin_yang.png" alt="">
+            <!--START Mobile Burger Menu-->
+            <div id="burger-menu" class="lg:hidden col-start-10 col-span-2 justify-self-end"><span></span></div>
+            <div id="menu" class="lg:hidden">
+                <ul>
+                    <li><a href="./index.html">Reiki</a></li>
+                    <li><a href="./about.html">Mein Weg</a></li>
+                    <li><a href="./angebote.html">Meine Angebote</a></li>
+                </ul>
+            </div>
+            <!--END Mobile Burger Menu-->
+            <ul class="hidden col-start-5 col-span-7 lg:flex justify-self-end items-center gap-8">
+                <li class="hover:border-b-2 border-black"><a href="./index.html">Reiki</a></li>
+                <li class="hover:border-b-2 border-black"><a href="./about.html">Mein Weg</a></li>
+                <li class="hover:border-b-2 border-black"><a href="./angebote.html">Meine Angebote</a></li>
             </ul>
+        </header>
+        <div id="main-grid" class="grid grid-cols-12 pt-32">
+            <h2
+                class="col-start-2 lg:col-start-3 col-span-10 lg:col-span-8 text-5xl mb-2 row-start-1 text-dark-color font-semibold">
+                Impressum</h2>
+            <p class="row-start-2 col-start-2 lg:col-start-3 col-span-10 lg:col-span-8 mb-8"></p>
+            <section class="col-start-2 lg:col-start-3 col-span-10 lg:col-span-8 row-start-3 mb-16">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati iusto voluptatum deleniti vel,
+                minima
+                laboriosam facilis, beatae fugiat distinctio iste, molestias tempore ducimus magni placeat ut similique
+                aliquam
+                voluptates temporibus!
+            </section>
         </div>
-        <!--END Mobile Burger Menu-->
-        <ul class="hidden col-start-5 col-span-7 lg:flex justify-self-end items-center gap-8">
-            <li class="hover:border-b-2 border-black"><a href="./index.html">Reiki</a></li>
-            <li class="hover:border-b-2 border-black"><a href="./about.html">Mein Weg</a></li>
-            <li class="border-b-2 border-black"><a href="./angebote.html">Meine Angebote</a></li>
-        </ul>
-    </header>
-    <div id="main-grid" class="grid grid-cols-12 pt-32">
-        <h2 class="col-start-2 lg:col-start-3 col-span-10 lg:col-span-8 text-4xl mb-2 row-start-1">Impressum</h2>
-        <p class="row-start-2 col-start-2 lg:col-start-3 col-span-10 lg:col-span-8 mb-8"></p>
-        <section class="col-start-2 lg:col-start-3 col-span-10 lg:col-span-8 row-start-3 mb-16">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati iusto voluptatum deleniti vel, minima laboriosam facilis, beatae fugiat distinctio iste, molestias tempore ducimus magni placeat ut similique aliquam voluptates temporibus!
-        </section>
+        <footer class="grid grid-cols-12 mt-32">
+            <hr class="col-start-1 col-span-12">
+            <div
+                class="grid grid-cols-1 md:grid-cols-3 justify-items-center items-center col-start-2 col-span-10 lg:col-start-3 lg:col-span-8">
+                <ul class="flex flex-col items-center my-4">
+                    <li><b>Doris Ingrid Butz</b></li>
+                    <li>Reiki - Meisterin / - Lehrerin</li>
+                    <li>Hirtengasse 5A</li>
+                    <li>61130 Nidderau</li>
+                </ul>
+                <ul class="flex flex-col items-center my-4">
+                    <li><a href="tel:+4961879924947" class="underline hover:no-underline"
+                            style="color: var(--highlight-color)">Tel:
+                            06187 99 24 947</a></li>
+                    <li><a href="tel:+491792250626" class="underline hover:no-underline"
+                            style="color: var(--highlight-color)">Tel:
+                            0179 22 50 626</a></li>
+                    <li><a href="mailto:doibu@web.de" class="underline hover:no-underline"
+                            style="color: var(--highlight-color)">doibu@web.de</a></li>
+                </ul>
+                <ul class="flex flex-col items-center my-4">
+                    <li><a href="./impressum.html" class="underline hover:no-underline">Impressum</a></li>
+                </ul>
+            </div>
+        </footer>
     </div>
-    <footer class="grid grid-cols-12 mt-32">
-        <hr class="col-start-1 col-span-12">
-        <div class="grid grid-cols-1 md:grid-cols-3 justify-items-center items-center col-start-2 col-span-10 lg:col-start-3 lg:col-span-8">
-            <ul class="flex flex-col items-center my-4">
-                <li>Doris Ingrid Butz</li>
-                <li>Reiki - Meisterin / - Lehrerin</li>
-                <li>Hirtengasse 5A</li>
-                <li>61130 Nidderau</li>
-            </ul>
-            <ul class="flex flex-col items-center my-4">
-                <li>06187 99 24 947</li>
-                <li>0179 22 50 626</li>
-                <li>doibu@web.de</li>
-            </ul>
-            <ul class="flex flex-col items-center my-4">
-                <li><a href="./impressum.html">Impressum</a></li>
-            </ul>
-        </div>
-    </footer>
 </body>
 <script src="script.js"></script>
+
 </html>

@@ -1,3 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+
+:root {
+  --text-color: #000000;
+  --subtle-color: #999999;
+  --background-color: #FFFFFF;
+  --light-color: #cce6ff;
+  --highlight-color: #5AB7F2;
+  --dark-color: #2D82B7;
+}
+
+body {
+  font-family: 'Barlow', sans-serif;
+  background-color: var(--light-color);
+}
+
+header {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.text-subtle-color {
+  color: var(--subtle-color)
+}
+
+.text-dark-color {
+  color: var(--dark-color);
+}
+
+.main-container {
+  background-color: var(--background-color);
+  max-width: 1536px;
+  margin: auto;
+}
+
 #main-grid {
   grid-template-rows: max-content max-content 1fr;
 }
