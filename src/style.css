@@ -33,7 +33,7 @@ header {
 }
 
 #main-grid {
-  grid-template-rows: max-content max-content 1fr;
+  margin: 0 8% 0 8%;
 }
 
 #price-table {
