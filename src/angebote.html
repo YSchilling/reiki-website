@@ -12,9 +12,11 @@
 <body>
     <div class="main-container">
         <!--Header-->
-        <header class="fixed bg-white w-full max-w-screen-2xl m-auto h-24 grid grid-cols-12 items-center">
-            <a href="./index.html" class="col-start-2 col-span-2 w-max"><img class="w-16 h-16"
-                    src="../media/yin_yang.png" alt=""></a>
+        <header class="fixed bg-bg-color w-full max-w-screen-2xl m-auto h-24 grid grid-cols-12 items-center">
+            <a href="./index.html" class="col-start-2 col-span-2 w-max flex items-center gap-6">
+                <img class="w-16 h-16" src="../media/yin_yang.png" alt="">
+                <h1 class="text-3xl md:text-4xl font-semibold text-dark-color">Doris Ingrid Butz</h1>
+            </a>
             <!--START Mobile Burger Menu-->
             <div id="burger-menu" class="lg:hidden col-start-10 col-span-2 justify-self-end"><span></span></div>
             <div id="menu" class="lg:hidden">
@@ -22,48 +24,60 @@
                     <li><a href="./index.html">Reiki</a></li>
                     <li><a href="./about.html">Mein Weg</a></li>
                     <li><a href="./angebote.html">Meine Angebote</a></li>
+                    <li><a href="./impressum.html">Kontakt</a></li>
                 </ul>
             </div>
             <!--END Mobile Burger Menu-->
-            <ul class="hidden col-start-5 col-span-7 lg:flex justify-self-end items-center gap-8">
-                <li class="hover:border-b-2 border-black"><a href="./index.html">Reiki</a></li>
+            <ul class="hidden col-start-5 col-span-7 lg:flex justify-self-end items-center gap-8 text-lg">
+                <li class="border-b-2 border-black"><a href="./index.html">Reiki</a></li>
                 <li class="hover:border-b-2 border-black"><a href="./about.html">Mein Weg</a></li>
-                <li class="border-b-2 border-black"><a href="./angebote.html">Meine Angebote</a></li>
+                <li class="hover:border-b-2 border-black"><a href="./angebote.html">Meine Angebote</a></li>
+                <li class="hover:border-b-2 border-black"><a href="./impressum.html">Kontakt</a></li>
             </ul>
         </header>
         <div id="main-grid" class="grid grid-cols-12 pt-32">
-            <h2 class="col-span-12 text-5xl mb-2 text-dark-color font-semibold">
+            <h2 class="col-span-12 text-3xl md:text-4xl mb-2 text-dark-color font-semibold">
                 Meine Angebote
             </h2>
             <p class="col-span-12 mb-8"></p>
-            <section class="col-span-12 mb-16">
-                <p class="mb-1 font-bold">Seminar REIKI 1</p>
-                <p class="mb-1">An 2 aufeinander folgenden Tage.</p>
-                <p class="mb-6">Kennenlernen der REIKI-Energie, Einstimmung, Öffnen der Energiekanäle, so
-                    dass der Energiestrom einfach empfangen werden und leicht fließen kann. Er ist
-                    dann unerschöpflich - ähnlich einem Brunnen, bei dem das Wasser aus einer
-                    immer fließenden Quelle strömt. Erste Erfahrungen unter meiner Anleitung
-                    werden gemacht. Jede*r Teilnehmer*in erhält eine Seminarmappe mit
-                    Materialien/Texten und eine Urkunde.
-                </p>
-                <p class="mb-1 font-bold">Seminar REIKI 2 - Aufbauseminar</p>
-                <p class="mb-1">Ebenfalls 2 Tage.</p>
-                <p class="mb-6">Einstimmen auf Fern-REIKI – die Möglichkeit, über Zeit und Raum hinweg REIKI
-                    an Menschen oder Tiere zu senden, die nicht direkt vor Ort sind. Kennenlernen
-                    und gemeinsames Üben. Auch hier gibt es zum Abschluss eine Seminarmappe
-                    sowie eine Urkunde.
-                </p>
-                <p class="mb-1 font-bold">REIKI empfangen</p>
-                <p class="mb-6">Nach Terminabsprache gebe ich bei mir in Nidderau REIKI-Energie an
-                    Menschen oder auch Tiere. Zu Menschen, die nicht mobil sind, komme ich auch
-                    nach Hause. Zu Tieren, die sich in ihrer gewohnten Umgebung sicherer fühlen -
-                    und natürlich für große Tiere – komme ich ebenfalls in ihr Zuhause.</p>
-                <p class="mb-1 font-bold">REIKI – Abende</p>
-                <p class="mb-1">auf Wunsch gern</p>
-                <p class="mb-6">zum Üben und gegenseitigem Austausch und der Gelegenheit, Fragen zu
-                    besprechen.</p>
+            <section class="col-span-12 mb-16 grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <p class="mb-1 font-bold">Seminar REIKI 1</p>
+                    <p class="mb-1">An 2 aufeinander folgenden Tage.</p>
+                    <p>Kennenlernen der REIKI-Energie, Einstimmung, Öffnen der Energiekanäle, so
+                        dass der Energiestrom einfach empfangen werden und leicht fließen kann. Er ist
+                        dann unerschöpflich - ähnlich einem Brunnen, bei dem das Wasser aus einer
+                        immer fließenden Quelle strömt. Erste Erfahrungen unter meiner Anleitung
+                        werden gemacht. Jede*r Teilnehmer*in erhält eine Seminarmappe mit
+                        Materialien/Texten und eine Urkunde.
+                    </p>
+                </div>
+                <div>
+                    <p class="mb-1 font-bold">Seminar REIKI 2 - Aufbauseminar</p>
+                    <p class="mb-1">Ebenfalls 2 Tage.</p>
+                    <p>Einstimmen auf Fern-REIKI – die Möglichkeit, über Zeit und Raum hinweg REIKI
+                        an Menschen oder Tiere zu senden, die nicht direkt vor Ort sind. Kennenlernen
+                        und gemeinsames Üben. Auch hier gibt es zum Abschluss eine Seminarmappe
+                        sowie eine Urkunde.
+                    </p>
+                </div>
+                <div>
+                    <p class="mb-1 font-bold">REIKI empfangen</p>
+                    <p>Nach Terminabsprache gebe ich bei mir in Nidderau REIKI-Energie an
+                        Menschen oder auch Tiere. Zu Menschen, die nicht mobil sind, komme ich auch
+                        nach Hause. Zu Tieren, die sich in ihrer gewohnten Umgebung sicherer fühlen -
+                        und natürlich für große Tiere – komme ich ebenfalls in ihr Zuhause.</p>
+                </div>
+                <div>
+                    <p class="mb-1 font-bold">REIKI – Abende</p>
+                    <p class="mb-1">Auf Wunsch gern.</p>
+                    <p>Zum Üben und gegenseitigem Austausch und der Gelegenheit, Fragen zu
+                        besprechen.</p>
+                </div>
+
             </section>
-            <section id="price-table" class="col-span-12 grid">
+            <section id="price-table" class="grid gap-x-8 col-start-1 col-span-12 md:col-start-2 md:col-span-10 p-8"
+                style="background-color: var(--light-color);">
                 <p class="col-span-2 font-bold text-xl">PREISE</p>
                 <div class="h-6 col-span-2"></div>
                 <p>REIKI 1 - Seminar</p>
@@ -77,8 +91,9 @@
                 <p>Euro 25,--</p>
                 <div class="h-6 col-span-2"></div>
                 <p>REIKI für Tiere</p>
-                <p>nach persönlicher Absprache</p>
-                <p class="text-subtle-color">Manche Tiere nehmen die REIKIO-Energie sofort an, andere sind skeptisch
+                <p class="row-span-2">nach persönlicher <br> Absprache</p>
+                <p class="text-subtle-color">Manche Tiere nehmen die REIKIO-Energie sofort an, andere sind
+                    skeptisch
                     (“Was das jetzt
                     wohl soll?”) und müssen langsamer damit vertraut gemacht werden, bevor sie es annehmen
                     und genießen können.</p>
@@ -108,12 +123,12 @@
                     <li>61130 Nidderau</li>
                 </ul>
                 <ul class="flex flex-col items-center my-4">
-                    <li><a href="tel:+4961879924947" class="underline hover:no-underline"
-                            style="color: var(--highlight-color)">Tel: 06187 99 24 947</a></li>
-                    <li><a href="tel:+491792250626" class="underline hover:no-underline"
-                            style="color: var(--highlight-color)">Tel: 0179 22 50 626</a></li>
-                    <li><a href="mailto:doibu@web.de" class="underline hover:no-underline"
-                            style="color: var(--highlight-color)">doibu@web.de</a></li>
+                    <li class="underline hover:no-underline hover:cursor-pointer" style="color: var(--highlight-color)"
+                        onclick='showContact(this, "39410 22 57 270", "gry:", 1);'>Show Tel</li>
+                    <li class="underline hover:no-underline hover:cursor-pointer" style="color: var(--highlight-color)"
+                        onclick='showContact(this, "3402 55 83 959", "gry:", 1);'>Show Tel</li>
+                    <li class="underline hover:no-underline hover:cursor-pointer" style="color: var(--highlight-color)"
+                        onclick='showContact(this, "qbvoh@jro.qr", "znvygb:", 0);'>Show Mail</li>
                 </ul>
                 <ul class="flex flex-col items-center my-4">
                     <li><a href="./impressum.html" class="underline hover:no-underline">Impressum</a></li>

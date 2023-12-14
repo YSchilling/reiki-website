@@ -7,11 +7,20 @@
   --light-color: #cce6ff;
   --highlight-color: #5AB7F2;
   --dark-color: #2D82B7;
+
+  --text-color: #000000;
+  --subtle-color: #999999;
+  --body-color: #efe9e4;
+  --background-color: #ffffff;
+  --light-color: #f5f1ee;
+  --highlight-color: #f18700;
+  --dark-color: #79402c;
 }
 
 body {
   font-family: 'Barlow', sans-serif;
-  background-color: var(--light-color);
+  background-color: var(--body-color);
+  color: var(--text-color)
 }
 
 header {
@@ -24,6 +33,10 @@ header {
 
 .text-dark-color {
   color: var(--dark-color);
+}
+
+.bg-bg-color {
+  background-color: var(--background-color);
 }
 
 .main-container {

@@ -12,9 +12,11 @@
 <body>
     <div class="main-container">
         <!--Header-->
-        <header class="fixed bg-white w-full max-w-screen-2xl m-auto h-24 grid grid-cols-12 items-center">
-            <a href="./index.html" class="col-start-2 col-span-2 w-max"><img class="w-16 h-16"
-                    src="../media/yin_yang.png" alt=""></a>
+        <header class="fixed bg-bg-color w-full max-w-screen-2xl m-auto h-24 grid grid-cols-12 items-center">
+            <a href="./index.html" class="col-start-2 col-span-2 w-max flex items-center gap-6">
+                <img class="w-16 h-16" src="../media/yin_yang.png" alt="">
+                <h1 class="text-3xl md:text-4xl font-semibold text-dark-color">Doris Ingrid Butz</h1>
+            </a>
             <!--START Mobile Burger Menu-->
             <div id="burger-menu" class="lg:hidden col-start-10 col-span-2 justify-self-end"><span></span></div>
             <div id="menu" class="lg:hidden">
@@ -22,55 +24,95 @@
                     <li><a href="./index.html">Reiki</a></li>
                     <li><a href="./about.html">Mein Weg</a></li>
                     <li><a href="./angebote.html">Meine Angebote</a></li>
+                    <li><a href="./impressum.html">Kontakt</a></li>
                 </ul>
             </div>
             <!--END Mobile Burger Menu-->
-            <ul class="hidden col-start-5 col-span-7 lg:flex justify-self-end items-center gap-8">
+            <ul class="hidden col-start-5 col-span-7 lg:flex justify-self-end items-center gap-8 text-lg">
                 <li class="hover:border-b-2 border-black"><a href="./index.html">Reiki</a></li>
                 <li class="hover:border-b-2 border-black"><a href="./about.html">Mein Weg</a></li>
                 <li class="hover:border-b-2 border-black"><a href="./angebote.html">Meine Angebote</a></li>
+                <li class="border-b-2 border-black"><a href="./impressum.html">Kontakt</a></li>
             </ul>
         </header>
         <div id="main-grid" class="grid grid-cols-12 pt-32">
-            <h2
-                class="col-start-2 lg:col-start-3 col-span-10 lg:col-span-8 text-5xl mb-2 row-start-1 text-dark-color font-semibold">
+            <h2 class="col-span-12 text-3xl md:text-4xl mb-6 text-dark-color font-semibold">
                 Impressum</h2>
-            <p class="row-start-2 col-start-2 lg:col-start-3 col-span-10 lg:col-span-8 mb-8"></p>
-            <section class="col-start-2 lg:col-start-3 col-span-10 lg:col-span-8 row-start-3 mb-16">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati iusto voluptatum deleniti vel,
-                minima
-                laboriosam facilis, beatae fugiat distinctio iste, molestias tempore ducimus magni placeat ut similique
-                aliquam
-                voluptates temporibus!
-            </section>
-        </div>
-        <footer class="grid grid-cols-12 mt-32">
-            <hr class="col-start-1 col-span-12">
-            <div
-                class="grid grid-cols-1 md:grid-cols-3 justify-items-center items-center col-start-2 col-span-10 lg:col-start-3 lg:col-span-8">
-                <ul class="flex flex-col items-center my-4">
+
+            <div id="contact-grid" class="grid justify-items-center items-center col-span-12 mb-16">
+                <ul class="flex flex-col">
                     <li><b>Doris Ingrid Butz</b></li>
                     <li>Reiki - Meisterin / - Lehrerin</li>
                     <li>Hirtengasse 5A</li>
                     <li>61130 Nidderau</li>
                 </ul>
-                <ul class="flex flex-col items-center my-4">
-                    <li><a href="tel:+4961879924947" class="underline hover:no-underline"
-                            style="color: var(--highlight-color)">Tel:
-                            06187 99 24 947</a></li>
-                    <li><a href="tel:+491792250626" class="underline hover:no-underline"
-                            style="color: var(--highlight-color)">Tel:
-                            0179 22 50 626</a></li>
-                    <li><a href="mailto:doibu@web.de" class="underline hover:no-underline"
-                            style="color: var(--highlight-color)">doibu@web.de</a></li>
-                </ul>
-                <ul class="flex flex-col items-center my-4">
-                    <li><a href="./impressum.html" class="underline hover:no-underline">Impressum</a></li>
+                <ul class="flex flex-col ml-8 pt-6">
+                    <li class="underline hover:no-underline hover:cursor-pointer" style="color: var(--highlight-color)"
+                        onclick='showContact(this, "39410 22 57 270", "gry:", 1);'>Show Tel</li>
+                    <li class="underline hover:no-underline hover:cursor-pointer" style="color: var(--highlight-color)"
+                        onclick='showContact(this, "3402 55 83 959", "gry:", 1);'>Show Tel</li>
+                    <li class="underline hover:no-underline hover:cursor-pointer" style="color: var(--highlight-color)"
+                        onclick='showContact(this, "qbvoh@jro.qr", "znvygb:", 0);'>Show Mail</li>
                 </ul>
             </div>
-        </footer>
+
+            <h3 class="col-span-12 text-xl">Haftung für Inhalte</h3>
+            <p class="col-span-12 mb-4">Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die
+                Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen.
+                Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den
+                allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht
+                verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen
+                zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder
+                Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine
+                diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten
+                Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese
+                Inhalte umgehend entfernen.</p>
+            <h3 class="col-span-12 text-xl">Haftung für Links</h3>
+            <p class="col-span-12 mb-4">Unser Angebot enthält Links zu externen Webseiten
+                Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte
+                auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter
+                oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung
+                auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung
+                nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne
+                konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von
+                Rechtsverletzungen werden wir derartige Links umgehend entfernen.</p>
+            <h3 class="col-span-12 text-xl">Urheberrecht</h3>
+            <p class="col-span-12 mb-4">Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten
+                unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der
+                Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen
+                Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen
+                Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die
+                Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten
+                Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden
+                Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.</p>
+            <h3 class="col-span-12 text-xl">Datenschutz</h3>
+            <p class="col-span-12 mb-4">Die Nutzung unserer Webseite ist in der Regel ohne Angabe personenbezogener
+                Daten
+                möglich. Soweit auf unseren Seiten personenbezogene Daten (beispielsweise Name, Anschrift oder
+                eMail-Adressen) erhoben werden, erfolgt dies, soweit möglich, stets auf freiwilliger Basis. Diese Daten
+                werden ohne Ihre ausdrückliche Zustimmung nicht an Dritte weitergegeben. Wir weisen darauf hin, dass die
+                Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann.
+                Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich. Der Nutzung von im
+                Rahmen der Impressumspflicht veröffentlichten Kontaktdaten durch Dritte zur Übersendung von nicht
+                ausdrücklich angeforderter Werbung und Informationsmaterialien wird hiermit ausdrücklich widersprochen.
+                Die Betreiber der Seiten behalten sich ausdrücklich rechtliche Schritte im Falle der unverlangten
+                Zusendung von Werbeinformationen, etwa durch Spam-Mails, vor.</p>
+        </div>
     </div>
 </body>
 <script src="script.js"></script>
+<style>
+    #contact-grid {
+        grid-template-columns: 1fr;
+
+    }
+
+    @media (min-width: 768px) {
+        #contact-grid {
+            grid-template-columns: max-content max-content;
+
+        }
+    }
+</style>
 
 </html>
