@@ -3,6 +3,7 @@ Beispiel website: https://tierheilpraktiker.de/verband/der-verband
 ## Todos
 
 - meta keywords and description
+- zeichen raussuchen
 
 ## Fragen
 
