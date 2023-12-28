@@ -1,7 +1,7 @@
 # Reiki Website
 
 This is my first coding project which I build for a client!
-[Website](http://mobiler-reiki-dienst-fuer-mensch-und-tier.de/)
+<a href="http://mobiler-reiki-dienst-fuer-mensch-und-tier.de" target="_blank">Website</a>
 
 ## Tools
 
